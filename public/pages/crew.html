@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assests/shared/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../src/crew.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+
+  <header id="header">
+    <div>
+      <img class="logo" src="/assests/shared/logo.svg" alt="logo">
+    </div>
+    <div>
+      <button class="moblie-nav" aria-controls="primary-navigation" aria-expanded="false"> <span class="sr-only"> Menu</span> </button>
+      <nav class="navegation" >
+        <ul id="primary-navigation" class="primary-navigation" data-visible="false">
+          <li><a href="/pages/index.html"> <span>00</span> Home</a> </li>
+          <li><a href="../pages/destination.html"> <span>01</span> Destination</a> </li>
+          <li><a href="../pages/crew.html"> <span>02</span> Crew</a> </li>
+          <li><a href="../pages/technology.html"> <span>03</span> Technology</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <section id="contents">
+    <div class="content-one ">
+       
+        <img id="imagemPerson" src="/assests/crew/image-douglas-hurley.png" alt="" >
+        
+    </div>
+
+
+
+    <div class="content-two">
+        <h4><span>02</span>  Meet your crew</h4>
+    
+
+        <h3 id="functionPerson">Commander </h3>
+        <h1 id="namePerson"> Douglas Hurley </h1>
+        <p id="descricaoPerson">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+            
+        <ul id="slider">
+            <li class="slide">
+              <a class="numb clicado" id="slide1" ></a>
+            </li>
+            <li class="slide">
+              <a class="numb" id="slide2" ></a>
+                
+            </li>
+            <li class="slide">
+              <a class="numb" id="slide3" ></a>
+              
+            </li>
+            <li class="slide">
+              <a class="numb" id="slide4" ></a>
+              
+            </li>
+
+        </ul>
+
+        
+    
+    </div>
+  </section>
+  <script src="/public/scripts/menu.js"></script>
+  <script src="../scripts/slider-crew.js"></script>
+
+</body>
+</html>

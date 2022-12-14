@@ -1,0 +1,561 @@
+/*CONGIFURAÇÕES PADRÕES*/
+
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+
+    background-image: url(/assests/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+
+    overflow: hidden;
+    
+}
+
+li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+span{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-right: 0.2rem;
+    
+}
+
+
+/*CABEÇALHO*/
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.logo{
+    padding-left: 3rem;
+    height: 70px;
+}
+
+
+
+/*NAVEGAÇÃO*/
+
+.navegation {
+   
+    background: linear-gradient(45deg, #0b0d19dc,#556179da, #0b19349d);
+    height: 100px;
+    width: 1000px;
+    padding-inline: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    transition: width 350ms ease-in;
+}
+
+.navegation ul{
+    display: flex;
+    gap: 5rem;
+    
+}
+
+.navegation ul a span {
+    display: block;
+}
+
+
+/*MENU HAMBUGUER*/
+
+.moblie-nav{
+    display: none;
+}
+
+
+/*CONTEUDO*/
+
+#contents{
+    display: flex;
+    align-items: center;
+    color: white;
+    flex: content;
+    flex-direction: row-reverse;
+    gap: 10rem;
+}
+
+.content-one{
+   padding-left: 10rem;
+   
+}
+
+
+.content-one img{
+    margin-top: 5rem;
+    padding-right: 8rem;
+    height: 750px;
+    width: 679px;
+}
+
+
+.content-two h4 {
+  
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+   
+    line-height: 34px;
+    letter-spacing: 4.725px;
+
+    color: #D0D6F9;
+
+    margin-bottom: 8rem;
+
+}
+
+
+.content-two h4 span {
+    font-family: 'Barlow Condensed';
+ 
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 34px;
+ 
+    letter-spacing: 4.725px;
+
+    mix-blend-mode: normal;
+    opacity: 0.25;
+
+}
+
+
+.content-two h3{
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+
+    margin-bottom: 1rem;
+}
+
+.content-two h1{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 115px;
+
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.text{
+    font-size: 3.3rem !important;
+}
+
+
+#descricaoPerson{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 178%;
+    color: #D0D6F9;
+
+    width: 38rem;
+    margin-bottom: 4rem;
+}
+
+
+
+
+/*SLIDER*/
+
+#slider{
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 3rem;
+}
+
+.numb {
+  
+    padding-inline: 8px;
+    padding-block: 1px;
+    border-radius: 50%;
+  
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    border: none;
+    cursor: pointer;
+}
+
+.clicado{
+   opacity: 100;
+   
+}
+
+    
+.infos{
+  
+    border-top: 1px solid white;
+    width: 30rem;
+
+    display: flex;
+    gap: 5rem;
+
+    text-transform: uppercase;
+}
+
+
+
+.infos div p{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 17px;
+
+
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+
+    color: #D0D6F9;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.infos div h4{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 32px;
+    
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 700px){
+    body{
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-image: url(/assests/destination/background-destination-mobile.jpg);
+       
+    }
+
+    .navegation{
+        background: none;
+    }
+
+    .navegation ul{
+        position: fixed;
+        inset: 0 0 0 30%;
+      
+
+        background-color: rgba(221, 221, 221, 0.082);
+        backdrop-filter: blur(2rem);
+
+        flex-direction: column;
+        text-align: left;
+        padding: min(30vh, 10rem) 2em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+       
+    }
+
+
+
+    .navegation ul[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .navegation ul li{
+        margin-bottom: 1rem;
+    }
+
+    .moblie-nav{
+        display: flex;
+        position: fixed;
+
+        background: url("/assests/shared/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        z-index: 9999;
+        
+        height: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 1rem;
+
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .moblie-nav[aria-expanded="true"]{
+        background: url("/assests/shared/icon-close.svg");
+        background-repeat: no-repeat;
+
+        background-size: cover;
+    }
+
+    .moblie-nav[aria-expanded="false"]{
+        position: absolute;
+    }
+
+    .moblie-nav span{
+        display: none;
+    }
+
+
+    #contents{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+
+    .content-one{
+        padding: 0;
+        margin: 0;
+    }
+
+  
+   .content-one img{
+        height: 300px;
+        width: 300px;
+        margin: 0;
+        padding-right: 0;
+        
+   }
+
+    .content-two {
+        margin-top: 0rem;
+        padding-left: 5rem;
+        
+    }
+
+    .content-two h4{
+        font-size: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+    }
+
+    .content-two h4 span{
+        font-size: 1rem;
+         
+    }
+
+
+    .content-two h3{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .content-two h1{
+        font-size: 1.5rem;
+        
+        width: 90%;
+    }
+
+    #descricaoPerson{
+        width: 90%;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+   
+}
+
+@media (min-width: 700px) and (max-width: 1200px){
+    body{
+        overflow-y: auto;
+        background-image: url(/assests/destination/background-destination-tablet.jpg);
+     
+    }
+    .navegation{
+        width: 590px;
+    }
+
+    .navegation ul{
+        gap: 3rem;
+    }
+
+    .navegation ul a{
+        font-size: 1rem;
+    }
+
+
+
+    #contents{
+        display: flex;
+        gap: 3rem;
+        flex-direction: row-reverse;
+    }
+
+    .content-one{
+        padding-top: 6rem;
+        padding-left: 0;
+    }
+
+  
+   .content-one img{
+        height: 400px;
+        width: 300px;
+        margin: 0;
+        padding-right: 0;
+        
+   }
+
+    .content-two {
+        margin-top: 0rem;
+        padding-left: 5rem;
+        
+        
+    }
+
+    .content-two h4{
+        font-size: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+    }
+
+    .content-two h4 span{
+        font-size: 1rem;
+         
+    }
+
+
+    .content-two h3{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .content-two h1{
+        font-size: 2.5rem;
+        
+        width: 90%;
+    }
+
+    #descricaoPerson{
+        width: 90%;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1600px){
+    body{
+        overflow-y: auto;
+        background-image: url(/assests/destination/background-destination-tablet.jpg);
+     
+    }
+    .navegation{
+        width: 590px;
+    }
+
+    .navegation ul{
+        gap: 3rem;
+    }
+
+    .navegation ul a{
+        font-size: 1rem;
+    }
+
+
+    #contents{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .content-one{
+        width: 50%;
+    }
+
+    .content-one img{
+        height: 500px;
+        width: 400px;
+        margin-top: 6rem;
+        margin-right: 6rem;
+    }
+
+    .content-two{
+        padding-left: 6rem;
+    }
+
+    .content-two h4, 
+    .content-two h4 span
+    {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    #functionPerson{
+        font-size: 1.4rem;
+    }
+   
+    .content-two h1{
+        font-size: 3rem;
+        line-height: normal;
+        margin-bottom: 2rem;
+    }
+
+    #descricaoPerson{
+        width: 100%;
+    }
+}
+
+@media (min-height: 500px ) and (max-height: 1050px) {
+    body{
+        height: 100%;
+    }
+}
