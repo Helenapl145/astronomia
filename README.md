@@ -1,4 +1,4 @@
-# astronomia
+# Space Tourism
  
 Projeto feito com base nesse vídeo abaixo, para o aprimoramento do uso das principais tecnologias de desenvolvimento WEB ou seja: HTML, CSS e JS que foram usado para realizar algumas funcionalidade como:
 
