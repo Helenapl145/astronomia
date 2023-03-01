@@ -15,8 +15,8 @@ body{
 
     height: 100vh;
    
-
 }
+
 
 li{
     list-style: none;
@@ -160,9 +160,12 @@ span{
         overflow-x: hidden;
         background-image: url(/assests/home/background-home-mobile.jpg);
     }
+
+   
     .navegation{
         background: none;
     }
+
     .navegation ul{
         position: fixed;
         inset: 0 0 0 30%;
@@ -172,6 +175,7 @@ span{
         backdrop-filter: blur(2rem);
 
         flex-direction: column;
+        
         text-align: left;
         padding: min(30vh, 10rem) 2em;
         transform: translateX(100%);
@@ -188,6 +192,7 @@ span{
 
     .moblie-nav{
         display: flex;
+        align-items: center;
         position: fixed;
 
         background: url("/assests/shared/icon-hamburger.svg");
@@ -198,7 +203,7 @@ span{
         
         height: 2rem;
         aspect-ratio: 1;
-        top: 2rem;
+        top: 3rem;
         right: 1rem;
 
         border: none;
